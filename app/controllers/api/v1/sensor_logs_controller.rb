@@ -42,7 +42,7 @@ class Api::V1::SensorLogsController < Api::V1::BaseController
         deleted_log: LogSerializer.new(@sensor_log).as_json
       }, status: :ok
     else
-       render json: {errors: @sensor_log.errors.full_messages},
+      render json: {errors: @sensor_log.errors.full_messages},
              status: :unprocessable_entity
     end
   end

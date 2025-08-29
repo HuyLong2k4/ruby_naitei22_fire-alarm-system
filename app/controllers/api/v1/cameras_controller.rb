@@ -33,7 +33,7 @@ class Api::V1::CamerasController < Api::V1::BaseController
         :created
       )
     else
-       render_error(@camera.errors.full_messages, :unprocessable_entity)
+      render_error(@camera.errors.full_messages, :unprocessable_entity)
     end
   end
 
