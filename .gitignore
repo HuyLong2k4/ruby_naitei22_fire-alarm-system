@@ -47,6 +47,7 @@
 #--------------fire-detection-ai-service------------------
 /fire-detection-ai-service/venv/
 /fire-detection-ai-service/.venv/
+/coverage
 
 # Python cache files
 /fire-detection-ai-service/__pycache__/
@@ -55,4 +56,3 @@
 # Ignore large model files
 *.h5
 *.hdf5
-/coverage
