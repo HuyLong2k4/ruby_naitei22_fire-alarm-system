@@ -45,8 +45,9 @@ class Zone < ApplicationRecord
   private
 
   def location_is_present
-    if city.blank? && (latitude.blank? || longitude.blank?)
-      errors.add(:base, "A zone must have a city or both latitude and longitude")
-    end
+    return unless city.blank? && (latitude.blank? || longitude.blank?)
+
+    errors.add(:base,
+               "A zone must have a city or both latitude and longitude")
   end
 end
